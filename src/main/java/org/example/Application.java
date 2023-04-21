@@ -37,11 +37,11 @@ public class Application {
             readData();
 
             System.out.println("Let's query by speciality"); // Querying data
-            System.out.println("Write the speciality to query");
+            System.out.print("Write the speciality to query: ");
             speciality = scan.nextLine();
             queryData(speciality);
 
-            System.out.println("Doctor's table:");
+            System.out.println("Doctor's table complete:");
             readData();
 
             System.out.println("Which doctor do you want to delete?"); // Deleting data by doctor's name
@@ -74,7 +74,7 @@ public class Application {
         try (PreparedStatement statement = connection.prepareStatement("""
                     SELECT name, speciality, age
                     FROM doctors
-                    ORDER BY age DESC    
+                    ORDER BY age DESC
                 """)) {
             ResultSet resultSet = statement.executeQuery();
             boolean empty = true;
@@ -96,7 +96,7 @@ public class Application {
         try (PreparedStatement statement = connection.prepareStatement("""
                     UPDATE doctors
                     SET speciality = ?
-                    WHERE name = ? 
+                    WHERE name = ?
                 """)) {
             statement.setString(1, newSpeciality);
             statement.setString(2, name);
@@ -120,7 +120,8 @@ public class Application {
         try (PreparedStatement statement = connection.prepareStatement("""
                     SELECT *
                     FROM doctors
-                    WHERE speciality = ?    
+                    WHERE speciality = ?
+                    ORDER BY age DESC
                 """)) {
 
             statement.setString(1, speciality);
@@ -150,5 +151,3 @@ public class Application {
         System.out.println("Connection valid: " + connection.isValid(5));
     }
 }
-
-
