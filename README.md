@@ -18,7 +18,7 @@ Follow the instructions below to set up and run the hospital management system a
 
 1. Clone the repository or download the source code.
 2. Set up the MariaDB database by running the SQL script `hospitalDB.sql` provided in the repository. This will create the necessary database and table.
-3. Update the database connection details in the `openDatabaseConnection()` method of the `Application` class. Replace the `jdbc:mariadb://localhost:3306/hospitalDB`, `davidramirez`, and `password` with your own database URL, username, and password.
+3. Update the database connection details in the `openDatabaseConnection()` method of the `Application` class. Replace the `jdbc:mariadb://localhost:3306/hospitalDB`, `YOUR_USERNAME`, and `YOUR_PASSWORD` with your own database URL, username, and password.
 4. Compile the Java source code using a Java compiler of your choice.
 5. Run the `Application` class to start the hospital management system application.
 
