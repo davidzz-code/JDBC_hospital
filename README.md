@@ -1,4 +1,4 @@
-# Hospital Database Application
+# JDBC Hospital database
 
 This is a Java application that interacts with a hospital database using JDBC (Java Database Connectivity). It allows you to perform basic CRUD (Create, Read, Update, Delete) operations on the database, such as adding doctors, reading doctor information, updating doctor speciality, querying doctors by speciality, and deleting doctors.
 
