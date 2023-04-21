@@ -14,7 +14,7 @@ This is a Java application that interacts with a hospital database using JDBC (J
 2. Make sure you have a MariaDB or MySQL database server running and accessible.
 3. Import the database schema using the `hospitalDB.sql` script provided in the repository.
 4. Open the `Application` class in your Java IDE or editor of choice.
-5. Update the database connection details in the `openDatabaseConnection()` method, including the database URL, username, and password.
+5. Update the database connection details in the `openDatabaseConnection()` method, including `YOUR_DATABASE_URL`, `YOUR_USERNAME`, `YOUR_PASSWORD`.
 6. Build and run the application.
 
 ## Usage
