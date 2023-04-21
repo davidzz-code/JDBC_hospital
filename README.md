@@ -39,15 +39,3 @@ Here's an example of how you can use the application:
 4. View the results of the operation in the console output.
 5. Repeat steps 2-4 for other operations or exit the application when done.
 
-## License
-
-This application is released under the [MIT License](LICENSE).
-
-## Contributions
-
-Contributions to this repository are welcome. Please submit any bug reports, feature requests, or pull requests through the GitHub repository.
-
-## Credits
-
-This application was developed by [Your Name].
-
